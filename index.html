@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="voiture">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exercice-2 Partie-4</title>
+  </head>
+    <body ng-controller='voitures'>
+      <ul>
+        <!--ng'repeat est une directive angular qui permet de boucler directement dans le Html  -->
+        <li ng-repeat="voiture in voitures" >
+          {{voiture.marque}}  {{voiture.couleur}}
+        </li>
+      </ul>
+
+  <script src="assets/js/script.js"></script>
+  </body>
+</html>
